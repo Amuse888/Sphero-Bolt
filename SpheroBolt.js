@@ -3,8 +3,12 @@
 //
 
 
-//Hello World Practice Program
-async function startProgram() {
+/**
+ * Hello World Practice Program
+ * LED turn to blue
+ * Forward for 2 seconds at a speed of 60
+ */
+async function helloWorld() {
 
  setMainLed({ r: 0, g: 0, b: 255 });
 
@@ -41,5 +45,7 @@ async function ninetyDegree() {
  * startProgram function sends the program to your Sphero Bolt
 */
 async function startProgram() {
-    await ninetyDegree() //<-- Calling the ninetyDegree fundtion to run it
+    await helloWorld() //<-- Calling the helloWorld function to run it
+    await ninetyDegree() //<-- Calling the ninetyDegree function to run it
 }
+
